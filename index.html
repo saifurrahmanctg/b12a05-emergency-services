@@ -22,5 +22,50 @@
     />
   </head>
 
-  <body></body>
+  <body>
+    <!-- Header section -->
+    <header>
+      <!-- Nav section -->
+      <nav class="px-[60px] py-6 md:flex justify-between items-center">
+        <div class="main-logo flex justify-center items-center gap-3">
+          <img class="w-14" src="./assets/logo.png" alt="" />
+          <h2 class="text-3xl leading-none text-[#006747] font-[1000]">
+            Emergency <br class="hidden md:block" />Service
+          </h2>
+        </div>
+        <div
+          class="nav-btn inter flex justify-center items-center gap-3 mt-4 md:mt-0"
+        >
+          <div
+            class="heart flex justify-center items-center gap-2 font-black text-xl text-black bg-[rgba(65,255,107,0.1)] rounded-[50px] w-32 h-14"
+          >
+            <span id="heart-count">0</span
+            ><img class="w-6" src="./assets/heart.png" alt="" />
+          </div>
+          <div
+            class="coins flex justify-center items-center gap-2 font-black text-xl text-black bg-[rgba(65,255,107,0.1)] rounded-[50px] w-32 h-14"
+          >
+            <span id="coin-count">100</span>
+            <div class="w-6"><img src="./assets/coin.png" alt="" /></div>
+          </div>
+          <button
+            class="flex items-center gap-2 bg-[#00A63E] text-[#FFFFFF] font-semibold text-[16px] px-9 py-[14px] rounded-[50px]"
+          >
+            <span id="copy-count">0</span>Copy
+          </button>
+        </div>
+      </nav>
+      <!-- Hero section -->
+      <div
+        class="hero-section madurai text-center bg-[linear-gradient(90deg,_#013223_0%,_#006747_50%,_#013223_100%)] text-white p-6 mt-44 md:mt-32"
+      >
+        <img class="mx-auto w-24" src="./assets/logo-dark.png" alt="" />
+        <h1 class="font-bold text-[40px] my-4">Emergency Service Directory</h1>
+        <p class="font-semibold text-xl">
+          Government Emergency Services at Your Fingertip – A Project by
+          Government of the People’s Republic of Bangladesh
+        </p>
+      </div>
+    </header>
+  </body>
 </html>
