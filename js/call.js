@@ -29,13 +29,13 @@ for (let button of callButtons) {
       // Create call history entry
       const callEntry = document.createElement("div");
       callEntry.innerHTML = `
-        <div class="call-history-card bg-[#f2f2f2] p-4 rounded-lg mt-5 flex gap-3 justify-between items-center">
+        <div class="call-history-card bg-[#f2f2f2] p-4 rounded-lg mt-5 flex gap-2 justify-between items-center">
           <div>
-            <h3 class="inter text-lg font-semibold text-[#111111] mt-4">${serviceTitle}</h3>
-            <p class="madurai text-lg font-normal text-[#5C5C5C]">${serviceNumber}</p>
+            <h3 class="inter text-base md:text-lg font-semibold text-[#111111] mt-4">${serviceTitle}</h3>
+            <p class="madurai text-base md:text-lg font-normal text-[#5C5C5C]">${serviceNumber}</p>
           </div>
           <div class="call-time text-right">
-            <p class="madurai text-lg font-normal text-[#111111]">${timestamp}</p>
+            <p class="madurai text-base md:text-lg font-normal text-[#111111]">${timestamp}</p>
           </div>
         </div>
       `;
@@ -50,10 +50,6 @@ for (let button of callButtons) {
 /* Clear call history functionality */
 const clearButton = document.getElementById("clear-btn");
 clearButton.addEventListener("click", function () {
-  alert("✅ Call history cleared!");
+  alert("✅ Call history has been cleared!");
   callHistoryContainer.innerHTML = "";
-
-  coinCounts += 40;
-  document.getElementById("coin-count").innerText = coinCounts;
-  alert("🎁 You are rewarded 40 coins!");
 });
